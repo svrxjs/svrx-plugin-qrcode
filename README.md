@@ -1,0 +1,1 @@
+# svrx-plugin-qrcode
