@@ -1,0 +1,21 @@
+{
+  "name": "svrx-plugin-qrcode",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "svrx": "~0.0.2"
+  },
+  "keywords": [
+    "svrx",
+    "svrx-plugin"
+  ],
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "qrcode": "^1.3.3"
+  }
+}

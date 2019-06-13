@@ -1,0 +1,40 @@
+.svrx-plugin-qrcode{
+    position: fixed;
+    right: 10px;
+    top:20px;
+    padding: 2px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px #f1f1f1;
+    opacity: 0.5;
+}
+
+.svrx-plugin-qrcode:hover, .svrx-plugin-qrcode.active{
+    opacity: 1;
+    background-color: #eee;
+    width: 200px;
+    height: 200px;;
+}
+
+.svrx-plugin-qrcode:hover img, .svrx-plugin-qrcode.active img{
+    display: none;
+}
+
+.svrx-plugin-qrcode:hover svg, .svrx-plugin-qrcode.active svg{
+    display: block;
+}
+.svrx-plugin-qrcode:active{
+    background-color: #fff;
+}
+
+.svrx-plugin-qrcode img{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.svrx-plugin-qrcode svg{
+    display: none;
+}
