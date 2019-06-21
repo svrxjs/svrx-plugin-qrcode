@@ -7,10 +7,21 @@ module.exports = {
 
     configSchema: {
 
+        cli: {
+            type: 'boolean',
+            default: true,
+            description: 'whether to display command line qrcode'
+        },
         ui: {
             type: 'boolean',
-            default: true
-        }
+            default: true,
+            description: 'whether to display browser ui qrcode'
+        },
+        console: {
+            type: 'boolean',
+            default: true,
+            description: 'whether to display browser console qrcode'
+        },
     },
 
     services: {
@@ -30,9 +41,11 @@ module.exports = {
     hooks: {
         async onCreate( { events, config, io, logger }) {
             events.on('ready', ()=>{
-                io.call('qrcode.get', {content: config.get('$.urls.external')}).then((urlTerminal)=>{
-                    logger.notify( 'generated qrcode for external urls \n' + urlTerminal)
-                })
+                if(config.get('cli')){
+                    io.call('qrcode.get', {content: config.get('$.urls.external')}).then((urlTerminal)=>{
+                        logger.notify( 'generated qrcode for external urls \n' + urlTerminal)
+                    })
+                }
             })
         }
     }
