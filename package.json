@@ -1,13 +1,13 @@
 {
   "name": "svrx-plugin-qrcode",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "svrx": "~0.0.2"
+    "svrx": "^0.0.3"
   },
   "keywords": [
     "svrx",

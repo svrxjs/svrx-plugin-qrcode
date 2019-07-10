@@ -5,8 +5,8 @@ var config = svrx.config;
 
 config.get().then(config=>{
     if(config.console){
-        io.call( 'qrcode.get', {content: location.href}).then(urlData=>{
-            console.log(urlData)
+        io.call( 'qrcode.get', {content: location.href }).then(urlData=>{
+            console.log(urlData);
         })
     }
     if(config.ui){
