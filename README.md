@@ -1,29 +1,29 @@
 # svrx-plugin-qrcode
 
-qrcode plugin for [svrx](https://github.com/x-orpheus/svrx)
+svrx plugin for qrcode
 
 ## Usage
 
 > **please confirm you have [installed svrx](https://github.com/x-orpheus/svrx) already**
 
-## Usage
-
-### cli
+### Via CLI
 
 ```sh
 svrx --qrcode
 ```
 
-### manual
+### Via API
 
 ```js
-const svrx = require('svrx');
+const svrx = require('@svrx/svrx');
 
 svrx({ plugins: ['qrcode'] }).start();
 ```
 
 ## Options
 
-- cli: whether to display command line qrcode, default `true`
-- ui: whether to display browser ui qrcode, default `true`
-- console: whether to display browser console qrcode, default `false`
+![](https://p1.music.126.net/WvU4RrWkSQRRfyE4nDkN6A==/109951164388330260.png)
+
+- `cli`: whether to display command line qrcode, default `true`
+- `ui`: whether to display browser ui qrcode, default `true`
+- `console`: whether to display browser console qrcode, default `false`. 
